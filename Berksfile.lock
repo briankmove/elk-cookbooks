@@ -27,7 +27,7 @@ GRAPH
   ant (1.0.2)
     ark (>= 0.0.0)
     java (>= 0.0.0)
-  apache2 (3.1.0)
+  apache2 (>=3.1.0)
     freebsd (>= 0.0.0)
     iptables (>= 0.0.0)
     logrotate (>= 0.0.0)
