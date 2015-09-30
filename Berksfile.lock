@@ -2,18 +2,18 @@ DEPENDENCIES
   elasticsearch
     git: git://github.com/elasticsearch/cookbook-elasticsearch.git
     revision: c112a02e50f40dfd93bbe9326e2e695e4a06e59a
-  kibana
+  kibana_lwrp
     git: git://github.com/lusis/chef-kibana.git
-    revision: 38157056cb9e327503ef1895c986400fafff7b36
+    revision: d708e6c6f2ce2be6891f254e981da1e6803fe7af
   logstash
     git: git://github.com/lusis/chef-logstash.git
     revision: 0facb1dae7b96b1d6c9740ce0e1e79c099bca64f
   opsworks_elasticsearch
-    git: git://github.com/hautelook/chef-opsworks-elasticsearch.git
-    revision: e7aa316b35747ee3d7dd65ff0b40f666ca241094
+    git: git://github.com/briankmove/chef-opsworks-elasticsearch.git
+    revision: 279fd2feb163fedb97f27f2d3abffb006e19897c
   opsworks_kibana
-    git: git://github.com/hautelook/chef-opsworks-kibana.git
-    revision: 30f027899430e3b69755b33cf10112a1d891b8ef
+    git: git://github.com/briankmove/chef-opsworks-kibana.git
+    revision: dda515c8ff07cf32445033ef7ab209c3010d62e6
   opsworks_logstash
     git: git://github.com/hautelook/chef-opsworks-logstash.git
     revision: 55df077489d79aaead0a93677611b6a31d62e88e
@@ -27,11 +27,7 @@ GRAPH
   ant (1.0.2)
     ark (>= 0.0.0)
     java (>= 0.0.0)
-  apache2 (1.11.0)
-    freebsd (>= 0.0.0)
-    iptables (>= 0.0.0)
-    logrotate (>= 0.0.0)
-    pacman (>= 0.0.0)
+  apache2 (3.1.0)
   apt (2.4.0)
   ark (0.9.0)
     7-zip (>= 0.0.0)
@@ -48,7 +44,6 @@ GRAPH
     java (>= 0.0.0)
     monit (>= 0.0.0)
     xml (>= 0.0.0)
-  freebsd (0.1.4)
   git (4.0.2)
     build-essential (>= 0.0.0)
     dmg (>= 0.0.0)
@@ -56,14 +51,19 @@ GRAPH
     windows (>= 0.0.0)
     yum (~> 3.0)
     yum-epel (>= 0.0.0)
-  iptables (0.13.2)
   java (1.24.0)
-  kibana (1.3.0)
-    apache2 (>= 0.0.0)
+  kibana (0.1.8)
+    apache2 (>= 2.0)
+    ark (>= 0.0.0)
+    build-essential (>= 0.0.0)
+  kibana_lwrp (2.0.6)
     ark (>= 0.0.0)
     git (>= 0.0.0)
+    java (>= 0.0.0)
     libarchive (>= 0.0.0)
     nginx (>= 0.0.0)
+    poise (>= 0.0.0)
+    runit (>= 0.0.0)
   libarchive (0.4.0)
     build-essential (~> 2.0)
   logrotate (1.6.0)
@@ -79,7 +79,7 @@ GRAPH
     runit (>= 0.0.0)
     yum (>= 0.0.0)
   monit (0.7.1)
-  nginx (2.7.4)
+  nginx (2.7.6)
     apt (~> 2.2)
     bluepill (~> 2.3)
     build-essential (~> 2.0)
@@ -87,10 +87,10 @@ GRAPH
     runit (~> 1.2)
     yum-epel (~> 0.3)
   ohai (2.0.1)
-  opsworks_elasticsearch (0.1.0)
+  opsworks_elasticsearch (0.2.0)
     elasticsearch (>= 0.0.0)
     java (>= 0.0.0)
-  opsworks_kibana (0.1.0)
+  opsworks_kibana (0.2.0)
     kibana (>= 0.0.0)
     ohai (>= 0.0.0)
     opsworks_utils (>= 0.0.0)
@@ -98,11 +98,11 @@ GRAPH
     logstash (>= 0.0.0)
     opsworks_utils (>= 0.0.0)
   opsworks_utils (0.1.0)
-  pacman (1.1.1)
+  poise (2.2.3)
   python (1.4.6)
     build-essential (>= 0.0.0)
     yum-epel (>= 0.0.0)
-  rsyslog (1.12.2)
+  rsyslog (2.1.0)
   runit (1.5.10)
     build-essential (>= 0.0.0)
     yum (~> 3.0)
