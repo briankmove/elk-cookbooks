@@ -57,6 +57,7 @@ GRAPH
     ark (>= 0.0.0)
     build-essential (>= 0.0.0)
   kibana_lwrp (2.0.6)
+    apache2 (>= 0.0.0)
     ark (>= 0.0.0)
     git (>= 0.0.0)
     java (>= 0.0.0)
