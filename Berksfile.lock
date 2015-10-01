@@ -4,7 +4,7 @@ DEPENDENCIES
     revision: c112a02e50f40dfd93bbe9326e2e695e4a06e59a
   kibana_lwrp
     git: git://github.com/lusis/chef-kibana.git
-    revision: d708e6c6f2ce2be6891f254e981da1e6803fe7af
+    revision: 0e5e432b814d05bb7f69e34f07b45b4c46d904dd
   logstash
     git: git://github.com/lusis/chef-logstash.git
     revision: 0facb1dae7b96b1d6c9740ce0e1e79c099bca64f
