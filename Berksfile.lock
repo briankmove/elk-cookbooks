@@ -2,9 +2,10 @@ DEPENDENCIES
   elasticsearch
     git: git://github.com/elasticsearch/cookbook-elasticsearch.git
     revision: c112a02e50f40dfd93bbe9326e2e695e4a06e59a
+  kibana
+    git: git://github.com/briankmove/chef-kibana.git
   kibana_lwrp
-    git: git://github.com/lusis/chef-kibana.git
-    revision: 0e5e432b814d05bb7f69e34f07b45b4c46d904dd
+    git: git://github.com/briankmove/chef-kibana.git
   logstash
     git: git://github.com/lusis/chef-logstash.git
     revision: 0facb1dae7b96b1d6c9740ce0e1e79c099bca64f
@@ -27,11 +28,12 @@ GRAPH
   ant (1.0.2)
     ark (>= 0.0.0)
     java (>= 0.0.0)
+  apt (2.4.0)
   apache2 (1.11.0)
     freebsd (>= 0.0.0)
+    iptables (>= 0.0.0)
     logrotate (>= 0.0.0)
     pacman (>= 0.0.0)
-  apt (2.4.0)
   ark (0.9.0)
     7-zip (>= 0.0.0)
     windows (>= 0.0.0)
@@ -47,6 +49,7 @@ GRAPH
     java (>= 0.0.0)
     monit (>= 0.0.0)
     xml (>= 0.0.0)
+  freebsd (0.1.4)
   git (4.0.2)
     build-essential (>= 0.0.0)
     dmg (>= 0.0.0)
@@ -54,15 +57,13 @@ GRAPH
     windows (>= 0.0.0)
     yum (~> 3.0)
     yum-epel (>= 0.0.0)
+  iptables (0.13.2)
   java (1.24.0)
-  kibana_lwrp (2.0.6)
+  kibana_lwrp (2.0.5)
     ark (>= 0.0.0)
     git (>= 0.0.0)
-    java (>= 0.0.0)
     libarchive (>= 0.0.0)
     nginx (>= 0.0.0)
-    poise (>= 0.0.0)
-    runit (>= 0.0.0)
   libarchive (0.4.0)
     build-essential (~> 2.0)
   logrotate (1.6.0)
@@ -78,7 +79,7 @@ GRAPH
     runit (>= 0.0.0)
     yum (>= 0.0.0)
   monit (0.7.1)
-  nginx (2.7.6)
+  nginx (2.7.4)
     apt (~> 2.2)
     bluepill (~> 2.3)
     build-essential (~> 2.0)
@@ -86,7 +87,7 @@ GRAPH
     runit (~> 1.2)
     yum-epel (~> 0.3)
   ohai (2.0.1)
-  opsworks_elasticsearch (0.2.0)
+  opsworks_elasticsearch (0.1.0)
     elasticsearch (>= 0.0.0)
     java (>= 0.0.0)
   opsworks_kibana (0.2.1)
@@ -97,11 +98,11 @@ GRAPH
     logstash (>= 0.0.0)
     opsworks_utils (>= 0.0.0)
   opsworks_utils (0.1.0)
-  poise (2.2.3)
+  pacman (1.1.1)
   python (1.4.6)
     build-essential (>= 0.0.0)
     yum-epel (>= 0.0.0)
-  rsyslog (2.1.0)
+  rsyslog (1.12.2)
   runit (1.5.10)
     build-essential (>= 0.0.0)
     yum (~> 3.0)
