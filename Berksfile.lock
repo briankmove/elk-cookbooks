@@ -13,7 +13,7 @@ DEPENDENCIES
     revision: 279fd2feb163fedb97f27f2d3abffb006e19897c
   opsworks_kibana
     git: git://github.com/briankmove/chef-opsworks-kibana.git
-    revision: dda515c8ff07cf32445033ef7ab209c3010d62e6
+    revision: bbe1d0b730ef1c03c5741549ee985a139f2ef2d4
   opsworks_logstash
     git: git://github.com/hautelook/chef-opsworks-logstash.git
     revision: 55df077489d79aaead0a93677611b6a31d62e88e
