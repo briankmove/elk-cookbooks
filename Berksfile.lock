@@ -87,7 +87,7 @@ GRAPH
     runit (~> 1.2)
     yum-epel (~> 0.3)
   ohai (2.0.1)
-  opsworks_elasticsearch (0.1.0)
+  opsworks_elasticsearch (0.2.0)
     elasticsearch (>= 0.0.0)
     java (>= 0.0.0)
   opsworks_kibana (0.2.1)
